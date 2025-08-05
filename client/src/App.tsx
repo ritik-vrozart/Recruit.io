@@ -1,4 +1,3 @@
-import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import { UserProvider } from './contexts/UserContext'
 import ProtectedRoute from './components/ProtectedRoute'
@@ -10,6 +9,7 @@ import ScheduledInterviews from './pages/ScheduledInterviews'
 import AllInterviews from './pages/AllInterviews'
 import Billing from './pages/Billing'
 import Settings from './pages/Settings'
+import CreateInterview from './pages/CreateInterview'
 
 function App() {
   return (
@@ -37,6 +37,7 @@ function App() {
           <Route path="all-interviews" element={<AllInterviews />} />
           <Route path="billing" element={<Billing />} />
           <Route path="settings" element={<Settings />} />
+          <Route path="create-interview" element={<CreateInterview />} />
         </Route>
       </Routes>
     </UserProvider>
